@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="js/calculate.js"></script>
+<script src="js/calcAng.js"></script>	
+
+
+
+</script>     
+<!-- Loading the AngularJS file from /public/angularJS folder -->
+</head>
+<body ng-app="calc" ng-controller="calc" ng-init="result=0">
+	<div class="row">
+  <div class="col-sm-12"></div>
+ 
+  <br><br><br>
+ <div class="row">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4">
+<div class="panel panel-primary">
+<div class="panel-heading" align="center">Calculator</div>
+<div class="panel-body">
+ <div class="row-fluid">
+<form>
+        <div class="span6 well">
+          <div id="calc-board">
+          <div class="row">
+          	<div class="col-sm-4">
+          	
+          </div></div>
+          <div class="row">
+          <div class="col-sm-2">
+          </div>
+  		<div class="col-sm-8">
+  			<div class="row">
+          	<div class="col-sm-3">
+          	<input type="button" class="on btn btn-primary" value="C" style="width: 60px;"> </input>
+          	</div>
+          	<div class="col-sm-9">
+          	<div class="form-group">
+ 			 <input type="number" class="form-control" style="text-align: right;" id="calc-screen" ng-model ="result" disabled="disabled"> 
+			</div>
+          	</div>
+          	</div>
+  			<div class="row">
+  			<div class="col-sm-3">
+              <input type="button" class="num btn btn-primary" value="7" style="width: 60px;"> </input>
+            </div><div class="col-sm-3">
+              <input type="button" class="num btn btn-primary" value="8" style="width: 60px;"> </input>
+            </div><div class="col-sm-3">
+              <input type="button" class="num btn btn-primary" value="9" style="width: 60px;"> </input>
+              </div><div class="col-sm-3">
+              <input type="button" class="sym btn btn-primary" value="/" style="width: 60px;"> </input>
+             </div> 
+            </div>
+            <div class="row">
+  			<div class="col-sm-3">
+              <input type="button" class="num btn btn-primary" value="4" style="width: 60px;"> </input>
+              </div><div class="col-sm-3">
+              <input type="button" class="num btn btn-primary" value="5" style="width: 60px;"> </input>
+              </div><div class="col-sm-3">
+              <input type="button" class="num btn btn-primary" value="6" style="width: 60px;"> </input>
+              </div><div class="col-sm-3">
+              <input type="button" class="sym btn btn-primary" value="*" style="width: 60px;"> </input>
+           </div> 
+            </div>
+            <div class="row">
+  			<div class="col-sm-3">
+              <input type="button" class="num btn btn-primary" value="1" style="width: 60px;"> </input>
+               </div><div class="col-sm-3">
+              <input type="button" class="num btn btn-primary" value="2" style="width: 60px;"> </input>
+               </div><div class="col-sm-3">
+              <input type="button" class="num btn btn-primary" value="3" style="width: 60px;"> </input>
+               </div><div class="col-sm-3">
+              <input type="button" class="sym btn btn-primary" value="-" style="width: 60px;"> </input>
+            </div> 
+            </div>
+            <div class="row">
+  			<div class="col-sm-3">
+              <input type="button" class="num btn btn-primary" value="0" style="width: 60px;"> </input>
+               </div><div class="col-sm-3">
+              <input type="button" class="num btn btn-primary" value="." style="width: 60px;"> </input>
+               </div><div class="col-sm-3">
+              <input type="submit" class="eq btn btn-primary" value="=" ng-click="calculate();"
+						value="Calc" style="width: 60px;"> </input>
+               </div><div class="col-sm-3">
+              <input type="button" class="sym btn btn-primary" value="+" style="width: 60px;"> </input>
+            </div></div></div></div>  
+            </div>
+          </div>
+  </form>        
+</div>
+<br><br>
+</div>
+</div></div></div>
+</div>  
+
+<div id = "inp1" hidden="hidden">
+	<input type="text" class="form-control" id="inp1" ng-model="inp1">
+	<input type="text" class="form-control" id="inp2" ng-model="inp2">
+	<input type="text" class="form-control" id="sym" ng-model="sym">
+</div>
+	
+</body>
+</html>
