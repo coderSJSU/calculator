@@ -20,8 +20,6 @@ function showCalc(req,res) {
 
 
 function calculateIt(req,res){
-	// These two variables come from the form on
-	// the views/login.hbs page
 	var eq = req.param("eq");
 	
 	var json_responses;

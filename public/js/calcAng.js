@@ -9,9 +9,7 @@ calc.controller('calc', function($scope, $http) {
 		//var inp2 = $scope.inp2;
 		var eq =  $('#calc-screen').val();
 		
-		var regex = new RegExp("^(\\d+[\\+\\-\\*\\/]{1})+\\d+$");//new RegExp('^[\d\.]{0,1}+[\+\-\*\/]{1}+\d') ;"^[0-9]+[.]?[0-9]{0,1}$"
-		//alert(regex.test(eq));
-		//var eq =  $scope.result;
+		var regex = new RegExp("^(\\d+[\\+\\-\\*\\/]{1})+\\d+$");
 		if(eq== undefined){
 		}
 		else if(regex.test(eq))
